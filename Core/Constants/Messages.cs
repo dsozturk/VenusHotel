@@ -9,5 +9,9 @@ namespace Core.Constants
         public static string Added = "Kayıt eklendi.";
         public static string Updated = "Kayıt güncelllendi.";
         public static string Deleted = "Kayıt silindi.";
+
+        //Hata Mesajları
+        public static string ResultEmpty = "Liste boş döndü.";
+        public static string NotFound = "Kayıt bulunamadı.";
     }
 }
