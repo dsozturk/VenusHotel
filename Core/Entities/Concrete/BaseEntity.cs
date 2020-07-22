@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Entities.Concrete
+namespace Core.Entities.Concrete
 {
     public abstract class BaseEntity
     {
@@ -11,10 +11,13 @@ namespace Entities.Concrete
             CreatedDate = DateTime.Now;
             IsDeleted = false;
         }
-        public int Id { get; set; }
+        public long Id { get; set; }
         public DateTime CreatedDate { get; set; }
-        public DateTime? DeletedDate { get; set; }
+        public long CreatedBy { get; set; }
         public bool IsDeleted { get; set; }
+        public DateTime? DeletedDate { get; set; }
+        public long DeletedBy { get; set; }
+        
 
     }
 }
